@@ -1,14 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-color: dimgray;
+
+
 }
 .clearf{
     clear: both;
 }
-#content{
+#index-content{
     background: url("../img/bj.jpg");
-    width: 1200px;
+
+
     height: 1080px;
     margin: 0px auto;
+
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;  /*此处的负值是宽度的一半*/
 }
 #head_top{
     position:relative;
@@ -31,10 +43,15 @@ body{
 #right02{
 
 }
-#footer{
+#footer p{
+    position: absolute;
+    top: 1080px;
     background-color: dimgray;
     color: white;
-    text-align: center;
+    width: 1200px;
+    left: 40%;
+
+
 }
 img{
     border-radius: 20px;
