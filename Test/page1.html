@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>Iran_index</title>
     <link rel="stylesheet" href="../style/style_iran_index.css">
+    <script language="javascript" type="text/javascript">
+        function showdiv() {
+            document.getElementById("bg").style.display ="block";
+            document.getElementById("show").style.display ="block";
+        }
+        function hidediv() {
+            document.getElementById("bg").style.display ='none';
+            document.getElementById("show").style.display ='none';
+        }
+    </script>
     <style>
         .position{
             margin-top: 400px;
@@ -15,14 +25,39 @@
         }
 
     </style>
+    <style type="text/css">
+        #bg{ display: none;
+            position: absolute;
+            top: 0%;  left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;  -moz-opacity: 0.7;  opacity:.70;
+            filter: alpha(opacity=70);}
+        #show{display: none;
+            position: absolute;
+            top: 25%;  left: 22%;
+            /*width: 53%;*/
+            /*height: 49%;*/
+            padding: 8px;
+            border: 8px solid #E8E9F7;
+            background-color: white;  z-index:1002;  overflow: auto;}
+    </style>
 </head>
 <body>
 <div id="index-content" >
     <div class="position">
     <div class="float-d">
-        <a href="">
+        <button onclick="showdiv()">
             <img src="img/1.jpg" alt="" width="200px" height="200px">
-        </a>
+        </button>
+        <div id="bg"></div>
+
+        <div id="show">
+            <img src="img/1.jpg" alt="" width="600px" height="400px">
+            <br>
+            <input id="btnclose" type="button" value="Close" onclick="hidediv();"/>
+        </div>
     </div>
     <div class="float-d">
         <img src="img/1.jpg" alt="" width="200px" height="200px">
