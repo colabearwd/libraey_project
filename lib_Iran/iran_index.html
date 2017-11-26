@@ -9,20 +9,20 @@
 <div id="index-content" >
     <div class="clearf"></div>
     <div id="head_top" >
-        <a href=""><img src="../imgs/1.jpg" alt="left01"  id="left01"></a>
-        <a href=""><img src="../imgs/2.jpg" alt="left02"  id="left02"></a>
+        <a href=""><img src="../imgs/1.jpg" alt="left01"  id="left01" width="180px"></a>
+        <a href=""><img src="../imgs/2.jpg" alt="left02"  id="left02" width="180px"></a>
 
 
         <span id="mid-contain">
 
             <div id="container">
-                <div id="list" style="left: -400px;">
-                    <img src="../imgs/d.jpg" alt="1" width="400px"/>
-                    <img src="../imgs/a.jpg" alt="1" width="400px"/>
-                    <img src="../imgs/b.jpg" alt="2" width="400px"/>
-                    <img src="../imgs/c.jpg" alt="3" width="400px"/>
-                    <img src="../imgs/d.jpg" alt="4" width="400px"/>
-                    <img src="../imgs/a.jpg" alt="4" width="400px"/>
+                <div id="list" style="left: -360px;">
+                    <img src="../imgs/d.jpg" alt="1" width="360px"/>
+                    <img src="../imgs/a.jpg" alt="1" width="360px"/>
+                    <img src="../imgs/b.jpg" alt="2" width="360px"/>
+                    <img src="../imgs/c.jpg" alt="3" width="360px"/>
+                    <img src="../imgs/d.jpg" alt="4" width="360px"/>
+                    <img src="../imgs/a.jpg" alt="4" width="360px"/>
                 </div>
                 <div id="buttons">
                     <span index="1" class="on"></span>
@@ -39,8 +39,8 @@
 
 
 
-        <a href=""><img src="../imgs/3.jpg" alt="right02" id="right02"></a>
-        <a href=""><img src="../imgs/4.jpg" alt="right01" id="right01"></a>
+        <a href=""><img src="../imgs/3.jpg" alt="right02" id="right02" width="180px"></a>
+        <a href=""><img src="../imgs/4.jpg" alt="right01" id="right01" width="180px"></a>
 
 
     </div>
@@ -68,21 +68,21 @@
             list.style.left = newLeft + 'px';
 
             //400是单个图片的宽度，1600是（单张图片宽度）*（图片个数）
-            if(newLeft<-1600){
-                list.style.left = -400 + 'px';
+            if(newLeft<-1440){
+                list.style.left = -360 + 'px';
             }
-            if(newLeft>-400){
-                list.style.left = -1600 + 'px';
+            if(newLeft>-360){
+                list.style.left = -1440 + 'px';
             }
             //--------
         }
         //--------
         //设置偏移量的大小
         prev.onclick = function() {
-            animate(400);
+            animate(360);
         }
         next.onclick = function() {
-            animate(-400);
+            animate(-360);
         }
         //--------
         //定时器，1500ms自动下一张
@@ -125,7 +125,7 @@
                 index = 4;
             }
             buttonsShow();
-            animate(400);
+            animate(360);
         }
         next.onclick = function() {
             //由于上边定时器的作用，index会一直递增下去，我们只有5个小圆点，所以需要做出判断
@@ -134,7 +134,7 @@
                 index = 1;
             }
             buttonsShow();
-            animate(-400);
+            animate(-360);
         }
         //------
         //
@@ -143,7 +143,7 @@
             (function(i) {
                 buttons[i].onclick = function() {
                     var clickIndex = parseInt(this.getAttribute('index'));
-                    var offset = 400 * (index - clickIndex);
+                    var offset = 360 * (index - clickIndex);
                     animate(offset);
                     index = clickIndex;
                     buttonsShow();
