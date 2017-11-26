@@ -6,21 +6,24 @@
 body{
     /*background-color: dimgray;*/
 
-
+    text-align:center;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
 }
 .clearf{
     clear: both;
 }
 #index-content{
     background: url("../imgs/bg.jpg");
+    background-repeat: no-repeat;
 
-
-    height: 1100px;
     margin: 0px auto;
+    padding: 0px auto;
+    height: 1100px;
+    width: 1200px;
 
     position: absolute;
-    background-repeat: no-repeat;
-    width: 1200px;
     left: 50%;
     margin-left: -600px;  /*此处的负值是宽度的一半*/
 }
@@ -35,9 +38,10 @@ body{
     top: 1080px;
     /*background-color: dimgray;*/
     color: black;
-    width: 1200px;
+    /*width: 1200px;*/
+    /*left: 40%;*/
+    text-align: center;
     left: 40%;
-
 
 }
 img{
@@ -52,9 +56,6 @@ img{
 
 /*---------------*/
 
-body {
-
-}
 
 #container {
     position: relative;
@@ -64,6 +65,7 @@ body {
     /*height: 500px;*/
     /*border: 3px solid #333;*/
     overflow: hidden;
+
 }
 
 #list {
@@ -88,7 +90,7 @@ body {
 
 #buttons {
     position: absolute;
-    left: 175px;
+    left: 155px;
     bottom: 20px;
     z-index: 2;
     height: 10px;
