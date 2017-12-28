@@ -8,138 +8,22 @@ body{
 
     text-align:center;
     position: relative;
-    margin-left:auto;
-    margin-right:auto;
 }
 .clearf{
     clear: both;
 }
-#index-content{
-    background: url("../imgs/bg.jpg");
-    background-repeat: no-repeat;
-
-    margin: 0px auto;
-    padding: 0px auto;
-    height: 1100px;
+#index-body{
+    /*background: url("../imgs/bg.jpg");*/
+    /*background-repeat: no-repeat;*/
+    height: 768px;
     width: 1200px;
-
-    position: absolute;
-    left: 50%;
-    margin-left: -600px;  /*此处的负值是宽度的一半*/
-}
-#head_top{
-    position:relative;
-    top: 575px;
-    margin-bottom: 0px;
-}
-
-#footer p{
-    position: absolute;
-    top: 1080px;
-    /*background-color: dimgray;*/
-    color: black;
-    /*width: 1200px;*/
-    /*left: 40%;*/
-    text-align: center;
-    left: 40%;
+    margin: 0 auto;
 
 }
-img{
-    border-radius: 20px;
-}
-/*---------------*/
-#left01,#left02,#right01,#right02,#mid-contain {
-    float: left;
-    margin-left: 18px;
-}
-
-
-/*---------------*/
-
-
-#container {
-    position: relative;
-    width: 360px;
-    height: 450px;
-    /*width: 400px;*/
-    /*height: 500px;*/
-    /*border: 3px solid #333;*/
-    overflow: hidden;
+#index-bodycontent{
 
 }
 
-#list {
-    position: absolute;
-    z-index: 1;
-    width: 2160px;
-    height: 450px;
+#img-1{
 
-    /*width: 2400px;*/
-    /*height: 500px;*/
-}
-
-#list img {
-    /*transform:rotate(90deg);*/
-    float: left;
-    width: 360px;
-    height: 450px;
-
-    /*width: 400px;*/
-    /*height: 500px;*/
-}
-
-#buttons {
-    position: absolute;
-    left: 155px;
-    bottom: 20px;
-    z-index: 2;
-    height: 10px;
-    width: 100px;
-}
-
-#buttons span {
-    float: left;
-    margin-right: 5px;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background: #333;
-    cursor: pointer;
-}
-
-#buttons .on {
-    background: orangered;
-}
-
-.arrow {
-    position: absolute;
-    top: 230px;
-    z-index: 2;
-    display: none;
-    width: 40px;
-    height: 40px;
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 39px;
-    text-align: center;
-    color: #fff;
-    background-color: RGBA(0, 0, 0, .3);
-    cursor: pointer;
-}
-
-.arrow:hover {
-    background-color: RGBA(0, 0, 0, .7);
-}
-
-#container:hover .arrow {
-    display: block;
-}
-
-#prev {
-    left: 12px;
-}
-
-#next {
-    right: 12px;
 }
