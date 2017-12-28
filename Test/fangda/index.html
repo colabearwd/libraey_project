@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录首页</title>
+
+    <script type="text/javascript" src="../JS/jquery-1.3.1.js"></script>
+    <script type="text/javascript" src="../JS/jquery.divbox.js"></script>
+    <script language="javascript">
+        function openDiv(num) {
+            var divObj  =   document.getElementById("window");
+            var img = document.createElement("img");
+            img.setAttribute("id","newImg");
+            img.setAttribute("width","500px");
+            img.src =   "../img/"+num+".jpg";
+            divObj.appendChild(img);
+            $("#window").OpenDiv();
+        }
+
+        function closeDiv() {
+            $("#window").CloseDiv();
+            var divObj  =   document.getElementById("window");
+            var imgObj  =   document.getElementById("newImg");
+            divObj.removeChild(imgObj);
+
+        }
+    </script>
+</head>
+
+<body style="height:2000px;">
+
+
+<div style="width:500px; height:300px; background:#FFF; display:none" id="window">
+
+    <input type="button" value="关闭窗口"  onclick="closeDiv()" style="float: left;"/>
+</div>
+
+<a href="javascript:openDiv(1);">
+    <img src="../img/1.jpg" alt="1" width="200px">
+</a>
+
+
+<a href="javascript:openDiv(2);">
+    <img src="../img/2.jpg" alt="2" width="200px">
+</a>
+
+<a href="javascript:openDiv(3);">
+    <img src="../img/3.jpg" alt="3" width="200px">
+</a>
+
+
+<a href="javascript:openDiv(4);">
+    <img src="../img/4.jpg" alt="4" width="200px">
+</a>
+
+
+
+
+</body>
+</html>
